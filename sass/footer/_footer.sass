@@ -1,0 +1,87 @@
+@import '../_mixin'
+footer
+    width: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    .conteiner7
+        @include Conteiner($display: flex, $direction: row, $gap: 340px)
+        width: 1320px
+        height: 331px
+        background-color: #3b3c4e
+        border-radius: 30px
+        @media (max-width: 1310px)
+            gap: 320px
+            width: 1000px
+        @media (max-width: 694px) 
+            height: 300px
+        .conteiner7A
+            display: flex
+            flex-direction: column
+            gap: 18px
+            justify-content: center
+            margin-left: 110px
+            @media (max-width: 1310px)
+                gap: 10px
+            @media (max-width: 694px) 
+                margin-left: 10px
+            h2
+                @include Title($color: #fff, $fontFamily: sans-serif, $fontSize: 29px, $fontWeight: 700)
+                @media (max-width: 1310px)
+                    font-size: 25px
+                    font-weight: 500
+                @media (max-width: 991px)
+                    
+            .ouremail
+                @include Title($color: #fff, $fontFamily: sans-serif, $fontSize: 16px, $fontWeight: 400)
+                @media (max-width: 1310px)
+                    font-size: 12px
+                img
+                    padding-right: 10px
+            .phon
+                @include Title($color: #fff, $fontFamily: sans-serif, $fontSize: 16px, $fontWeight: 400)
+                @media (max-width: 1310px)
+                    font-size: 12px
+                img
+                    padding-right: 10px
+            a
+                width: 194px
+                height: 54px
+                background-color: #ffc107
+                box-shadow: 0px 4.078px 14.273px 0px rgba(255, 193, 7, 0.30)  
+                @include Title($color: #fff, $fontFamily: sans-serif, $fontSize: 18px, $fontWeight: 700)
+                text-decoration: none
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 31px
+                @media (max-width: 1310px)
+                    font-size: 12px
+                    font-weight: 300
+                    width: 140px
+                    height: 40px
+        .img
+            @media (max-width: 1310px)
+                width: 220px
+            @media (max-width: 991px)
+                margin-left: 486px
+                position: absolute
+                width: 436px
+                height: 328px
+            @media (max-width: 936px) 
+                width: 400px
+                margin-left: 450px
+            @media (max-width: 864px) 
+                width: 365px
+                margin-left: 360px
+            @media (max-width: 739px) 
+                width: 320px
+            @media (max-width: 694px)     
+                width: 300px
+                margin-left: 300px
+            
+
+                
+        
+                
+            

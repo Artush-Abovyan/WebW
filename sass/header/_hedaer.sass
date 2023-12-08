@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap")
+$borderblac: 1px solid black
+$borderCloro: rgba(72, 74, 97, 1)
+$color: #484A61
+header
+    z-index: 1
+    background-color: white
+    position: fixed
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 1920px
+    height: 74px
+    box-shadow: 0px 1px 5px $color
+    .header-conteiner
+        gap: 475px
+        display: flex
+        flex-direction: row
+        align-items: center
+        @media (max-width: 1310px) 
+            gap: 20px 
+        @media (max-width: 991px) 
+            gap: 400px   
+        img
+            width: 166px
+            height: 36px
+        .links
+            display: flex
+            flex-direction: row
+            gap: 34px
+            @media (max-width: 1310px)
+                gap: 10px 
+            @media (max-width: 991px) 
+                display: none
+            a
+                margin-top: 9px
+                font-family: sans-serif
+                color: $color
+                text-decoration: none
+                font-family: "Source Sans Pro"
+                font-size: 18px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                @media (max-width: 1310px)
+                    font-size: 15px 
+                &:hover
+                    font-weight: bold
+            button
+                cursor: pointer
+                background-color: white
+                border-color: $borderCloro
+                border: $borderblac
+                border-radius: 50px
+                font-family: sans-serif
+                color: $color
+                font-size: 18px
+                font-style: normal
+                font-weight: 400
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 175px
+                height: 42px
+                display: flex
+                @media (max-width: 1310px)
+                    font-size: 15px
+                    width: 130px
+                    height: 40px 
+    #Burger-menu
+        display: none
+        @media (max-width: 991px) 
+            display: flex
+        #burger-menu 
+            position: relative
+            cursor: pointer
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            width: 30px
+            height: 19px
+            
+            .bar
+                background-color: #000
+                height: 5px
+                width: 100%
+                border-radius: 5px
+                transition: 0.3s
+        #nav-menu 
+            background-color: white
+            margin-top: 46px
+            margin-left: 100px
+            display: none
+            a
+                width: 50px
+                margin-top: 5px
+                color: #000000
+                text-decoration: none
+
+
+
+
